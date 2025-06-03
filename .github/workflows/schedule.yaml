@@ -12,7 +12,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
+      - uses: ./.intlhub.org/actions/setup
 
       - name: "Process and update dependencies"
         run: pnpm -w update:deps --actor ${{ github.actor }}
