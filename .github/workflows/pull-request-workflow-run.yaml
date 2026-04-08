@@ -23,7 +23,7 @@ jobs:
       TEMPLATES_API_CLIENT_ID: ${{ vars.TEMPLATES_API_CLIENT_ID }}
       TEMPLATES_API_CLIENT_SECRET: ${{ secrets.TEMPLATES_API_CLIENT_SECRET }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: ./.github/actions/setup
 
       - name: Download PR ID
@@ -64,7 +64,7 @@ jobs:
         # Simply checking out to fetch the files is reasonable, however.
         # https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/
         #
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           repository: ${{ env.PR_REPOSITORY }}
           ref: ${{ env.PR_REF }}
