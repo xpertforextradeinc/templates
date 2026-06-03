@@ -21,10 +21,10 @@
 		"mysql2": "3.15.3"
 	},
 	"devDependencies": {
-		"@cloudflare/vitest-pool-workers": "0.10.11",
+		"@cloudflare/vitest-pool-workers": "0.16.12",
 		"typescript": "5.9.3",
-		"vitest": "3.2.4",
-		"wrangler": "4.56.0"
+		"vitest": "4.1.8",
+		"wrangler": "4.97.0"
 	},
 	"private": true,
 	"scripts": {
